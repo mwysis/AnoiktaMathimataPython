@@ -185,7 +185,7 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a href="#3.1">3.1 Ορισμοί</a></p>
 <p><a href="#3.2">3.2 Τύποι Δεδομένων</a></p>
-<p><a href="#3.3">3.3 Μετατροπές τύπων αριθμών (και συμβολοσειρών)</a></p>
+<p><a href="#3.3">3.3 Μετατροπές μεταξύ τύπων δεδομένων</a></p>
 
 </div>
 </div>
@@ -296,6 +296,7 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Δεδομένα (data)</strong> λέγονται οι τιμές των μεταβλητών ενός προγράμματος είτε ως είσοδος (input) ή ως έξοδος (output) της εκτέλεσης του προγράμματος.</p>
+<p>Συχνά, ταυτίζοντας τις μεταβλητές με τις τιμές που παίρνουν, θα μιλάμε για <strong>τύπους μεταβλητών</strong>.</p>
 
 </div>
 </div>
@@ -306,13 +307,14 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Οι πέντε <strong>κύριοι τύποι δεδομένων</strong> της Python είναι:</p>
-<ul>
-<li>Αριθμοί</li>
-<li>Συμβολοσειρές</li>
+<ol>
+<li><strong>Αριθμοί</strong></li>
+<li><strong>Συμβολοσειρές</strong></li>
 <li>Λίστες</li>
 <li>Πλειάδες</li>
 <li>Λεξικά</li>
-</ul>
+</ol>
+<p>[Για αριθμούς (και αριθμητικές πράξεις) θα μιλήσουμε στην επόμενη ενότητα, ενώ για συμβολοσειρές (και πράξεις σ' αυτές) στην μεθεπόμενη. Οι 3 άλλοι τύποι δεδομένων θα εξετασθούν διαδοχικά στις υπόλοιπες ενότητες που ακολουθούν.]</p>
 
 </div>
 </div>
@@ -322,13 +324,13 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Οι τέσσερις <strong>κύριοι τύποι αριθμών</strong> είναι οι εξής:</p>
-<ul>
+<p>Οι τέσσερις (κύριοι) <strong>τύποι αριθμών</strong> είναι οι εξής:</p>
+<ol>
 <li><strong>int</strong>: ακέραιοι αριθμοί (θετικοί ή αρνητικοί) </li>
-<li><strong>long</strong>: αριθμοί με μεγάλο πλήθος ψηφίων (στο δεκαδικό ή το οκταδικό ή το δεκαεξαδικό σύστημα)</li>
+<li><strong>long</strong>: <em>ακέραιοι</em> αριθμοί με μεγάλο πλήθος ψηφίων (στο δεκαδικό ή το οκταδικό ή το δεκαεξαδικό σύστημα)</li>
 <li><strong>float</strong>: πραγματικοί (μη ακέραιοι) αριθμοί (ή αριθμοί κινητής υποδιαστολής) </li>
 <li><strong>complex</strong>: μιγαδικοί αριθμοί (της μορφής x + yj, όπου x, y είναι παραγματικοί-float)</li>
-</ul>
+</ol>
 
 </div>
 </div>
@@ -1176,28 +1178,159 @@ i4AoLLWYSIggIAgIAoKAICAItBkC/x+el/B53QsP5gAAAABJRU5ErkJggg==
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Παραδείγματα τύπων αριθμών:</p>
-
+<p><a id='3.3'></a></p>
+<h2 id="3.3-&#924;&#949;&#964;&#945;&#964;&#961;&#959;&#960;&#941;&#962;-&#956;&#949;&#964;&#945;&#958;&#973;-&#964;&#973;&#960;&#969;&#957;-&#948;&#949;&#948;&#959;&#956;&#941;&#957;&#969;&#957;">3.3 &#924;&#949;&#964;&#945;&#964;&#961;&#959;&#960;&#941;&#962; &#956;&#949;&#964;&#945;&#958;&#973; &#964;&#973;&#960;&#969;&#957; &#948;&#949;&#948;&#959;&#956;&#941;&#957;&#969;&#957;<a class="anchor-link" href="#3.3-&#924;&#949;&#964;&#945;&#964;&#961;&#959;&#960;&#941;&#962;-&#956;&#949;&#964;&#945;&#958;&#973;-&#964;&#973;&#960;&#969;&#957;-&#948;&#949;&#948;&#959;&#956;&#941;&#957;&#969;&#957;">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#924;&#949;&#964;&#945;&#964;&#961;&#959;&#960;&#941;&#962;-&#956;&#949;&#964;&#945;&#958;&#973;-&#964;&#973;&#960;&#969;&#957;-&#945;&#961;&#953;&#952;&#956;&#974;&#957;">&#924;&#949;&#964;&#945;&#964;&#961;&#959;&#960;&#941;&#962; &#956;&#949;&#964;&#945;&#958;&#973; &#964;&#973;&#960;&#969;&#957; &#945;&#961;&#953;&#952;&#956;&#974;&#957;<a class="anchor-link" href="#&#924;&#949;&#964;&#945;&#964;&#961;&#959;&#960;&#941;&#962;-&#956;&#949;&#964;&#945;&#958;&#973;-&#964;&#973;&#960;&#969;&#957;-&#945;&#961;&#953;&#952;&#956;&#974;&#957;">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[84]:</div>
+<div class="prompt input_prompt">In&nbsp;[108]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span><span class="o">**</span><span class="mi">100</span>
-<span class="n">x1</span> <span class="o">=</span> <span class="mi">10</span><span class="o">**</span><span class="il">100L</span>
-<span class="n">x2</span> <span class="o">=</span> <span class="mf">1e+100</span>
-<span class="k">print</span> <span class="s">&#39;10**100 = 10**100L is&#39;</span><span class="p">,</span> <span class="n">x</span> <span class="o">==</span> <span class="n">x1</span>     <span class="c"># &quot;==&quot; είναι ένας λογικός τελεστής (Boole) </span>
-                                           <span class="c"># [Θα το δούμε στη συνέχεια]</span>
-<span class="k">print</span> <span class="s">&#39;Note that 10**100 is of&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="s">&#39;and 10**100L is of&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">x1</span><span class="p">)</span>
-<span class="k">print</span> <span class="s">&#39;10**100 = 1e+100 is&#39;</span><span class="p">,</span> <span class="n">x</span> <span class="o">==</span> <span class="n">x2</span>
-<span class="k">print</span> <span class="s">&#39;Note that 10**100 is of&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="s">&#39;and 1e+100 is of&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">x2</span><span class="p">)</span>
-<span class="k">print</span> <span class="s">&#39;Thus, 10**100 and 10**100L is the same number but 10**100 and 1e+100 are not&#39;</span>
-<span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="k">print</span> <span class="s">&#39;The integer number corresponding to 10**100&#39;</span><span class="p">,</span><span class="s">&#39;is&#39;</span><span class="p">,</span> <span class="n">y</span>
-<span class="k">print</span> <span class="s">&#39;The float number corresponding to 10**100&#39;</span><span class="p">,</span> <span class="s">&#39;is&#39;</span><span class="p">,</span> <span class="n">z</span>
+<div class=" highlight hl-ipython2"><pre><span class="n">x</span> <span class="o">=</span> <span class="mf">16.7825</span>
+<span class="n">y</span> <span class="o">=</span> <span class="nb">long</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">z</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="k">print</span> <span class="s">&#39;16.7825 is of&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="k">print</span> <span class="s">&#39;long(16.7825) is of&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<span class="k">print</span> <span class="s">&#39;int(16.7825) is of&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+<span class="k">print</span> <span class="s">&#39;long(16.7825) =&#39;</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s">&#39;and int(16.7825) =&#39;</span><span class="p">,</span> <span class="n">z</span>
+<span class="k">print</span> <span class="s">&#39;Note that long(16.7825) = int(16.7825) is&#39;</span><span class="p">,</span> <span class="n">y</span> <span class="o">==</span> <span class="n">z</span> 
+<span class="c"># &quot;==&quot; είναι ένας λογικός τελεστής (Boole) [Θα το δούμε στη συνέχεια]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>16.7825 is of &lt;type &apos;float&apos;&gt;
+long(16.7825) is of &lt;type &apos;long&apos;&gt;
+int(16.7825) is of &lt;type &apos;int&apos;&gt;
+long(16.7825) = 16 and int(16.7825) = 16
+Note that long(16.7825) = int(16.7825) is True
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="&#928;&#961;&#940;&#958;&#949;&#953;&#962;-&#956;&#949;&#964;&#945;&#958;&#973;-&#945;&#961;&#953;&#952;&#956;&#974;&#957;-&#948;&#953;&#945;&#966;&#959;&#961;&#949;&#964;&#953;&#954;&#974;&#957;-&#964;&#973;&#960;&#969;&#957;-&#945;&#960;&#945;&#947;&#959;&#961;&#949;&#973;&#959;&#957;&#964;&#945;&#953;-&#954;&#945;&#953;-&#948;&#943;&#957;&#959;&#965;&#957;-&#955;&#940;&#952;&#959;&#962;!">&#928;&#961;&#940;&#958;&#949;&#953;&#962; &#956;&#949;&#964;&#945;&#958;&#973; &#945;&#961;&#953;&#952;&#956;&#974;&#957; &#948;&#953;&#945;&#966;&#959;&#961;&#949;&#964;&#953;&#954;&#974;&#957; &#964;&#973;&#960;&#969;&#957; &#945;&#960;&#945;&#947;&#959;&#961;&#949;&#973;&#959;&#957;&#964;&#945;&#953; &#954;&#945;&#953; &#948;&#943;&#957;&#959;&#965;&#957; &#955;&#940;&#952;&#959;&#962;!<a class="anchor-link" href="#&#928;&#961;&#940;&#958;&#949;&#953;&#962;-&#956;&#949;&#964;&#945;&#958;&#973;-&#945;&#961;&#953;&#952;&#956;&#974;&#957;-&#948;&#953;&#945;&#966;&#959;&#961;&#949;&#964;&#953;&#954;&#974;&#957;-&#964;&#973;&#960;&#969;&#957;-&#945;&#960;&#945;&#947;&#959;&#961;&#949;&#973;&#959;&#957;&#964;&#945;&#953;-&#954;&#945;&#953;-&#948;&#943;&#957;&#959;&#965;&#957;-&#955;&#940;&#952;&#959;&#962;!">&#182;</a></h5>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[109]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="n">a</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="k">print</span> <span class="s">&#39;str(16.7825) =&#39;</span><span class="p">,</span> <span class="n">a</span>
+<span class="k">print</span> <span class="s">&#39;str(16.7825) is of&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="k">print</span> <span class="s">&#39;16.7825 + 10 =&#39;</span><span class="p">,</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">10</span>
+<span class="k">print</span> <span class="s">&#39;str(16.7825) + 10 =&#39;</span><span class="p">,</span> <span class="n">a</span> <span class="o">+</span> <span class="mi">10</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>str(16.7825) = 16.7825
+str(16.7825) is of &lt;type &apos;str&apos;&gt;
+16.7825 + 10 = 26.7825
+str(16.7825) + 10 =</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansired">---------------------------------------------------------------------------</span>
+<span class="ansired">TypeError</span>                                 Traceback (most recent call last)
+<span class="ansigreen">&lt;ipython-input-109-1c1e3e95e04d&gt;</span> in <span class="ansicyan">&lt;module&gt;</span><span class="ansiblue">()</span>
+<span class="ansigreen">      3</span> <span class="ansigreen">print</span> <span class="ansiblue">&apos;str(16.7825) is of&apos;</span><span class="ansiblue">,</span> type<span class="ansiblue">(</span>a<span class="ansiblue">)</span><span class="ansiblue"></span>
+<span class="ansigreen">      4</span> <span class="ansigreen">print</span> <span class="ansiblue">&apos;16.7825 + 10 =&apos;</span><span class="ansiblue">,</span> x <span class="ansiblue">+</span> <span class="ansicyan">10</span><span class="ansiblue"></span>
+<span class="ansigreen">----&gt; 5</span><span class="ansired"> </span><span class="ansigreen">print</span> <span class="ansiblue">&apos;str(16.7825) + 10 =&apos;</span><span class="ansiblue">,</span> a <span class="ansiblue">+</span> <span class="ansicyan">10</span><span class="ansiblue"></span>
+
+<span class="ansired">TypeError</span>: cannot concatenate &apos;str&apos; and &apos;int&apos; objects</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="&#916;&#953;&#940;&#966;&#959;&#961;&#949;&#962;-&#945;&#957;&#945;&#960;&#945;&#961;&#945;&#963;&#964;&#940;&#963;&#949;&#953;&#962;-&#945;&#961;&#953;&#952;&#956;&#974;&#957;-&#963;&#964;&#951;&#957;-Python">&#916;&#953;&#940;&#966;&#959;&#961;&#949;&#962; &#945;&#957;&#945;&#960;&#945;&#961;&#945;&#963;&#964;&#940;&#963;&#949;&#953;&#962; &#945;&#961;&#953;&#952;&#956;&#974;&#957; &#963;&#964;&#951;&#957; Python<a class="anchor-link" href="#&#916;&#953;&#940;&#966;&#959;&#961;&#949;&#962;-&#945;&#957;&#945;&#960;&#945;&#961;&#945;&#963;&#964;&#940;&#963;&#949;&#953;&#962;-&#945;&#961;&#953;&#952;&#956;&#974;&#957;-&#963;&#964;&#951;&#957;-Python">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[104]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="k">print</span> <span class="s">&#39;Different representions of integers in Python:&#39;</span>
+<span class="n">u</span> <span class="o">=</span> <span class="mi">10000</span>
+<span class="n">u1</span> <span class="o">=</span> <span class="mi">10</span><span class="o">**</span><span class="mi">4</span>
+<span class="n">u2</span> <span class="o">=</span> <span class="mf">1e+4</span>
+<span class="k">print</span> <span class="s">&#39;The integer&#39;</span><span class="p">,</span> <span class="n">u</span><span class="p">,</span> <span class="s">&#39;is represented either as 10**4 =&#39;</span><span class="p">,</span> <span class="n">u1</span><span class="p">,</span> <span class="s">&#39;or as 1e+4 =&#39;</span><span class="p">,</span> <span class="n">u</span>
+<span class="k">print</span> <span class="s">&#39;However,&#39;</span><span class="p">,</span> <span class="n">u</span><span class="p">,</span> <span class="s">&#39;and 10**4 are of&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">u</span><span class="p">),</span> <span class="nb">type</span><span class="p">(</span><span class="n">u1</span><span class="p">),</span> <span class="s">&#39;but&#39;</span><span class="p">,</span> <span class="s">&#39;1e+4 is of&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">u2</span><span class="p">)</span>
+<span class="k">print</span> <span class="s">&#39;The float corresponding to&#39;</span><span class="p">,</span> <span class="n">u</span><span class="p">,</span><span class="s">&#39;is&#39;</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="n">u</span><span class="p">)</span>
+<span class="k">print</span> <span class="s">&#39;The complex number corresponding to&#39;</span><span class="p">,</span> <span class="n">u</span><span class="p">,</span> <span class="s">&#39;is&#39;</span><span class="p">,</span> <span class="nb">complex</span><span class="p">(</span><span class="n">u</span><span class="p">)</span>
+<span class="k">print</span>
+
+<span class="k">print</span> <span class="s">&#39;Different representions of floats in Python:&#39;</span>
+<span class="n">v</span> <span class="o">=</span> <span class="mf">101.35</span>
+<span class="n">v1</span> <span class="o">=</span> <span class="mi">10135</span><span class="o">*</span><span class="mi">10</span><span class="o">**</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">v2</span> <span class="o">=</span> <span class="mf">10135e-2</span>
+<span class="k">print</span> <span class="s">&#39;The float&#39;</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="s">&quot;is &#39;represented&#39; either as 10135*10**(-2) =&quot;</span><span class="p">,</span> <span class="n">v1</span><span class="p">,</span> <span class="s">&#39;or as 10135e-2 =&#39;</span><span class="p">,</span> <span class="n">v2</span>
+<span class="k">print</span> <span class="s">&#39;All&#39;</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="s">&#39;, 10135*10**(-2), 10135e-22 are of&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">v</span><span class="p">),</span> <span class="nb">type</span><span class="p">(</span><span class="n">v1</span><span class="p">),</span> <span class="nb">type</span><span class="p">(</span><span class="n">v2</span><span class="p">)</span>
+<span class="k">print</span> <span class="s">&#39;The integer corresponding to&#39;</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span><span class="s">&#39;is&#39;</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+<span class="k">print</span> <span class="s">&#39;The complex number corresponding to&#39;</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="s">&#39;is&#39;</span><span class="p">,</span> <span class="nb">complex</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+<span class="k">print</span>
+
+<span class="k">print</span> <span class="s">&#39;Different representions of long integers in Python:&#39;</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">10</span><span class="o">**</span><span class="mi">50</span>
+<span class="n">x1</span> <span class="o">=</span> <span class="mi">10</span><span class="o">**</span><span class="il">50L</span>
+<span class="n">x2</span> <span class="o">=</span> <span class="mf">1e+50</span>
+<span class="k">print</span> <span class="s">&#39;The long integer&#39;</span> 
+<span class="k">print</span> <span class="s">&#39;10**50 =&#39;</span><span class="p">,</span> <span class="n">x</span>
+<span class="k">print</span> <span class="s">&#39;is represented either as 10**50L or as 1e+50&#39;</span>
+<span class="k">print</span> <span class="s">&#39;However, 10**50 and 10**50L are of&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="nb">type</span><span class="p">(</span><span class="n">x1</span><span class="p">),</span> <span class="s">&#39;but 1e+50 is of&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">x2</span><span class="p">)</span>
+<span class="k">print</span> <span class="s">&#39;The integer corresponding to 10**100&#39;</span><span class="p">,</span><span class="s">&#39;is&#39;</span><span class="p">,</span> <span class="n">y</span>
+<span class="k">print</span> <span class="s">&#39;The float corresponding to 10**100&#39;</span><span class="p">,</span> <span class="s">&#39;is&#39;</span><span class="p">,</span> <span class="n">z</span>
 <span class="k">print</span> <span class="s">&#39;The complex number corresponding to 10**100&#39;</span><span class="p">,</span> <span class="s">&#39;is&#39;</span><span class="p">,</span> <span class="nb">complex</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
 
@@ -1211,14 +1344,26 @@ i4AoLLWYSIggIAgIAoKAICAItBkC/x+el/B53QsP5gAAAABJRU5ErkJggg==
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>10**100 = 10**100L is True
-Note that 10**100 is of &lt;type &apos;long&apos;&gt; and 10**100L is of &lt;type &apos;long&apos;&gt;
-10**100 = 1e+100 is False
-Note that 10**100 is of &lt;type &apos;long&apos;&gt; and 1e+100 is of &lt;type &apos;float&apos;&gt;
-Thus, 10**100 and 10**100L is the same number but 10**100 and 1e+100 are not
-The integer number corresponding to 10**100 is 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-The float number corresponding to 10**100 is 1e+100
-The complex number corresponding to 10**100 is (1e+100+0j)
+<pre>Different representions of integers in Python:
+The integer 10000 is represented either as 10**4 = 10000 or as 1e+4 = 10000
+However, 10000 and 10**4 are of &lt;type &apos;int&apos;&gt; &lt;type &apos;int&apos;&gt; but 1e+4 is of &lt;type &apos;float&apos;&gt;
+The float corresponding to 10000 is 10000.0
+The complex number corresponding to 10000 is (10000+0j)
+
+Different representions of floats in Python:
+The float 101.35 is &apos;represented&apos; either as 10135*10**(-2) = 101.35 or as 10135e-2 = 101.35
+All 101.35 , 10135*10**(-2), 10135e-22 are of &lt;type &apos;float&apos;&gt; &lt;type &apos;float&apos;&gt; &lt;type &apos;float&apos;&gt;
+The integer corresponding to 101.35 is 101
+The complex number corresponding to 101.35 is (101.35+0j)
+
+Different representions of long integers in Python:
+The long integer
+10**50 = 100000000000000000000000000000000000000000000000000
+is represented either as 10**50L or as 1e+50
+However, 10**50 and 10**50L are of &lt;type &apos;long&apos;&gt; &lt;type &apos;long&apos;&gt; but 1e+50 is of &lt;type &apos;float&apos;&gt;
+The integer corresponding to 10**100 is int(x)
+The float corresponding to 10**100 is 16
+The complex number corresponding to 10**100 is (1e+50+0j)
 </pre>
 </div>
 </div>
@@ -1232,17 +1377,27 @@ The complex number corresponding to 10**100 is (1e+100+0j)
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#928;&#961;&#959;&#963;&#948;&#953;&#959;&#961;&#953;&#963;&#956;&#972;&#962;-&#954;&#945;&#953;-&#941;&#955;&#949;&#947;&#967;&#959;&#962;-&#964;&#973;&#960;&#959;&#965;-&#956;&#949;&#964;&#945;&#946;&#955;&#951;&#964;&#974;&#957;">&#928;&#961;&#959;&#963;&#948;&#953;&#959;&#961;&#953;&#963;&#956;&#972;&#962; &#954;&#945;&#953; &#941;&#955;&#949;&#947;&#967;&#959;&#962; &#964;&#973;&#960;&#959;&#965; &#956;&#949;&#964;&#945;&#946;&#955;&#951;&#964;&#974;&#957;<a class="anchor-link" href="#&#928;&#961;&#959;&#963;&#948;&#953;&#959;&#961;&#953;&#963;&#956;&#972;&#962;-&#954;&#945;&#953;-&#941;&#955;&#949;&#947;&#967;&#959;&#962;-&#964;&#973;&#960;&#959;&#965;-&#956;&#949;&#964;&#945;&#946;&#955;&#951;&#964;&#974;&#957;">&#182;</a></h3>
+<h3 id="&#924;&#949;&#964;&#945;&#964;&#961;&#959;&#960;&#941;&#962;-&#956;&#949;&#964;&#945;&#958;&#973;-&#945;&#961;&#953;&#952;&#956;&#974;&#957;-&#954;&#945;&#953;-&#963;&#965;&#956;&#946;&#959;&#955;&#959;&#963;&#949;&#953;&#961;&#974;&#957;">&#924;&#949;&#964;&#945;&#964;&#961;&#959;&#960;&#941;&#962; &#956;&#949;&#964;&#945;&#958;&#973; &#945;&#961;&#953;&#952;&#956;&#974;&#957; &#954;&#945;&#953; &#963;&#965;&#956;&#946;&#959;&#955;&#959;&#963;&#949;&#953;&#961;&#974;&#957;<a class="anchor-link" href="#&#924;&#949;&#964;&#945;&#964;&#961;&#959;&#960;&#941;&#962;-&#956;&#949;&#964;&#945;&#958;&#973;-&#945;&#961;&#953;&#952;&#956;&#974;&#957;-&#954;&#945;&#953;-&#963;&#965;&#956;&#946;&#959;&#955;&#959;&#963;&#949;&#953;&#961;&#974;&#957;">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="&#915;&#953;&#945;-&#963;&#965;&#956;&#946;&#959;&#955;&#959;&#963;&#949;&#953;&#961;&#941;&#962;-&#963;&#965;&#956;&#946;&#972;&#955;&#969;&#957;/&#947;&#961;&#945;&#956;&#956;&#940;&#964;&#969;&#957;-(&#972;&#967;&#953;-&#968;&#951;&#966;&#943;&#969;&#957;/bits)">&#915;&#953;&#945; &#963;&#965;&#956;&#946;&#959;&#955;&#959;&#963;&#949;&#953;&#961;&#941;&#962; &#963;&#965;&#956;&#946;&#972;&#955;&#969;&#957;/&#947;&#961;&#945;&#956;&#956;&#940;&#964;&#969;&#957; (&#972;&#967;&#953; &#968;&#951;&#966;&#943;&#969;&#957;/bits)<a class="anchor-link" href="#&#915;&#953;&#945;-&#963;&#965;&#956;&#946;&#959;&#955;&#959;&#963;&#949;&#953;&#961;&#941;&#962;-&#963;&#965;&#956;&#946;&#972;&#955;&#969;&#957;/&#947;&#961;&#945;&#956;&#956;&#940;&#964;&#969;&#957;-(&#972;&#967;&#953;-&#968;&#951;&#966;&#943;&#969;&#957;/bits)">&#182;</a></h4>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[78]:</div>
+<div class="prompt input_prompt">In&nbsp;[111]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">print</span> <span class="s">&quot;&#39;abc&#39; is of&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="s">&#39;abc&#39;</span><span class="p">)</span>  <span class="c"># Οι συμβολοσειρές πάντα μέσα σε (μονά) &#39;.&#39; </span>
-                                  <span class="c"># ή (διπλά) &quot;,&quot; [Θα τα δούμε στη συνέχεια]</span>
+<div class=" highlight hl-ipython2"><pre><span class="n">a</span> <span class="o">=</span> <span class="s">&#39;Patra2000&#39;</span>                    <span class="c"># Οι συμβολοσειρές πάντα μέσα σε (μονά) &#39;.&#39; </span>
+                                   <span class="c"># ή (διπλά) &quot;,&quot; [Θα τα δούμε στη συνέχεια]</span>
+<span class="k">print</span> <span class="s">&quot;&#39;Patra200&#39; is of&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1255,118 +1410,7 @@ The complex number corresponding to 10**100 is (1e+100+0j)
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>&apos;abc&apos; is of &lt;type &apos;str&apos;&gt;
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[73]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">a</span> <span class="o">=</span> <span class="s">&#39;Patra&#39;</span>
-<span class="k">print</span> <span class="s">&quot;&#39;Patra&#39; is of&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>&apos;Patra&apos; is of &lt;type &apos;str&apos;&gt;
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[74]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">x</span> <span class="o">=</span> <span class="s">&#39;1509&#39;</span>
-<span class="k">print</span> <span class="s">&quot;&#39;1509&#39; is of&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>&apos;1509&apos; is of &lt;type &apos;str&apos;&gt;
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[75]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">x1</span> <span class="o">=</span> <span class="mi">1509</span>
-<span class="k">print</span> <span class="s">&quot;1509 is of&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">x1</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>1509 is of &lt;type &apos;int&apos;&gt;
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[85]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">print</span> <span class="s">&#39;&#39;&#39;&quot;type(&#39;10&#39;) = int&quot; is&#39;&#39;&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="s">&#39;10&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="nb">int</span> 
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>&quot;type(&apos;10&apos;) = int&quot; is False
+<pre>Patra2000 = &apos;Patra200&apos; is of &lt;type &apos;str&apos;&gt;
 </pre>
 </div>
 </div>
@@ -1380,8 +1424,157 @@ The complex number corresponding to 10**100 is (1e+100+0j)
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='3.3'></a></p>
-<h2 id="3.3-&#924;&#949;&#964;&#945;&#964;&#961;&#959;&#960;&#941;&#962;-&#964;&#973;&#960;&#969;&#957;-&#945;&#961;&#953;&#952;&#956;&#974;&#957;-(&#954;&#945;&#953;-&#963;&#965;&#956;&#946;&#959;&#955;&#959;&#963;&#949;&#953;&#961;&#974;&#957;)">3.3 &#924;&#949;&#964;&#945;&#964;&#961;&#959;&#960;&#941;&#962; &#964;&#973;&#960;&#969;&#957; &#945;&#961;&#953;&#952;&#956;&#974;&#957; (&#954;&#945;&#953; &#963;&#965;&#956;&#946;&#959;&#955;&#959;&#963;&#949;&#953;&#961;&#974;&#957;)<a class="anchor-link" href="#3.3-&#924;&#949;&#964;&#945;&#964;&#961;&#959;&#960;&#941;&#962;-&#964;&#973;&#960;&#969;&#957;-&#945;&#961;&#953;&#952;&#956;&#974;&#957;-(&#954;&#945;&#953;-&#963;&#965;&#956;&#946;&#959;&#955;&#959;&#963;&#949;&#953;&#961;&#974;&#957;)">&#182;</a></h2>
+<h5 id="&#931;&#965;&#956;&#946;&#959;&#955;&#959;&#963;&#949;&#953;&#961;&#941;&#962;-&#960;&#959;&#965;-&#948;&#949;&#957;-&#945;&#960;&#959;&#964;&#949;&#955;&#959;&#973;&#957;&#964;&#945;&#953;-&#956;&#972;&#957;&#959;-&#945;&#960;&#972;-&#968;&#951;&#966;&#943;&#945;/bits-&#916;&#917;&#925;-&#956;&#949;&#964;&#945;&#964;&#961;&#941;&#960;&#959;&#957;&#964;&#945;&#953;-&#963;&#949;-&#945;&#961;&#953;&#952;&#956;&#959;&#973;&#962;!">&#931;&#965;&#956;&#946;&#959;&#955;&#959;&#963;&#949;&#953;&#961;&#941;&#962; &#960;&#959;&#965; &#948;&#949;&#957; &#945;&#960;&#959;&#964;&#949;&#955;&#959;&#973;&#957;&#964;&#945;&#953; &#956;&#972;&#957;&#959; &#945;&#960;&#972; &#968;&#951;&#966;&#943;&#945;/bits &#916;&#917;&#925; &#956;&#949;&#964;&#945;&#964;&#961;&#941;&#960;&#959;&#957;&#964;&#945;&#953; &#963;&#949; &#945;&#961;&#953;&#952;&#956;&#959;&#973;&#962;!<a class="anchor-link" href="#&#931;&#965;&#956;&#946;&#959;&#955;&#959;&#963;&#949;&#953;&#961;&#941;&#962;-&#960;&#959;&#965;-&#948;&#949;&#957;-&#945;&#960;&#959;&#964;&#949;&#955;&#959;&#973;&#957;&#964;&#945;&#953;-&#956;&#972;&#957;&#959;-&#945;&#960;&#972;-&#968;&#951;&#966;&#943;&#945;/bits-&#916;&#917;&#925;-&#956;&#949;&#964;&#945;&#964;&#961;&#941;&#960;&#959;&#957;&#964;&#945;&#953;-&#963;&#949;-&#945;&#961;&#953;&#952;&#956;&#959;&#973;&#962;!">&#182;</a></h5>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[112]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="n">ia</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">ia</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansired">---------------------------------------------------------------------------</span>
+<span class="ansired">ValueError</span>                                Traceback (most recent call last)
+<span class="ansigreen">&lt;ipython-input-112-9d1f346aa49f&gt;</span> in <span class="ansicyan">&lt;module&gt;</span><span class="ansiblue">()</span>
+<span class="ansigreen">----&gt; 1</span><span class="ansired"> </span>ia <span class="ansiblue">=</span> int<span class="ansiblue">(</span>a<span class="ansiblue">)</span><span class="ansiblue"></span>
+<span class="ansigreen">      2</span> <span class="ansigreen">print</span> ia<span class="ansiblue"></span>
+
+<span class="ansired">ValueError</span>: invalid literal for int() with base 10: &apos;Patra2000&apos;</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="&#915;&#953;&#945;-&#963;&#965;&#956;&#946;&#959;&#955;&#959;&#963;&#949;&#953;&#961;&#941;&#962;-&#960;&#959;&#965;-&#945;&#960;&#959;&#964;&#949;&#955;&#959;&#973;&#957;&#964;&#945;&#953;-&#945;&#960;&#972;-&#968;&#951;&#966;&#943;&#945;/bits">&#915;&#953;&#945; &#963;&#965;&#956;&#946;&#959;&#955;&#959;&#963;&#949;&#953;&#961;&#941;&#962; &#960;&#959;&#965; &#945;&#960;&#959;&#964;&#949;&#955;&#959;&#973;&#957;&#964;&#945;&#953; &#945;&#960;&#972; &#968;&#951;&#966;&#943;&#945;/bits<a class="anchor-link" href="#&#915;&#953;&#945;-&#963;&#965;&#956;&#946;&#959;&#955;&#959;&#963;&#949;&#953;&#961;&#941;&#962;-&#960;&#959;&#965;-&#945;&#960;&#959;&#964;&#949;&#955;&#959;&#973;&#957;&#964;&#945;&#953;-&#945;&#960;&#972;-&#968;&#951;&#966;&#943;&#945;/bits">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[100]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="k">print</span> <span class="s">&#39;From numbers to strings:&#39;</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mf">1509.07</span>
+<span class="n">sx</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">x</span><span class="p">,</span> <span class="s">&#39;is of&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="k">print</span> <span class="s">&quot;&#39;1509.07&#39; = str(1509.07) is of&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">sx</span><span class="p">)</span>
+<span class="k">print</span>
+
+<span class="k">print</span> <span class="s">&#39;From strings to numbers:&#39;</span>
+<span class="n">s</span> <span class="o">=</span> <span class="s">&#39;1509.07&#39;</span>
+<span class="n">fs</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="k">print</span> <span class="s">&quot;&#39;1509.07&#39; is of&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">fs</span><span class="p">,</span> <span class="s">&quot;= float(&#39;1509.07&#39;) is of&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">fs</span><span class="p">)</span>
+<span class="k">print</span>
+<span class="k">print</span> <span class="s">&#39;&#39;&#39;&quot;type(1509.07) = float&quot; is&#39;&#39;&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="mf">1509.07</span><span class="p">)</span> <span class="o">==</span> <span class="nb">float</span> 
+<span class="k">print</span> <span class="s">&#39;&#39;&#39;&quot;type(&#39;1509.07&#39;) = float&quot; is&#39;&#39;&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="s">&#39;1509.07&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="nb">float</span> 
+<span class="k">print</span> <span class="s">&#39;&#39;&#39;&quot;type(&#39;1509.07&#39;) = str&quot; is&#39;&#39;&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="s">&#39;1509.07&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="nb">str</span> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>From numbers to strings:
+1509.07 is of &lt;type &apos;float&apos;&gt;
+&apos;1509.07&apos; = str(1509.07) is of &lt;type &apos;str&apos;&gt;
+
+From strings to numbers:
+&apos;1509.07&apos; is of &lt;type &apos;str&apos;&gt;
+1509.07 = float(&apos;1509.07&apos;) is of &lt;type &apos;float&apos;&gt;
+
+&quot;type(1509.07) = float&quot; is True
+&quot;type(&apos;1509.07&apos;) = float&quot; is False
+&quot;type(&apos;1509.07&apos;) = str&quot; is True
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="&#924;&#949;&#964;&#945;&#964;&#961;&#959;&#960;&#941;&#962;-&#945;&#961;&#953;&#952;&#956;&#974;&#957;-&#945;&#960;&#972;-&#963;&#965;&#956;&#946;&#959;&#955;&#959;&#963;&#949;&#953;&#961;&#941;&#962;-&#969;&#962;-&#960;&#961;&#959;&#962;-&#959;&#960;&#959;&#953;&#945;&#948;&#942;&#960;&#959;&#964;&#949;-&#946;&#940;&#963;&#951;-&#963;&#949;-&#945;&#954;&#941;&#961;&#945;&#953;&#959;&#965;&#962;-&#948;&#949;&#954;&#945;&#948;&#953;&#954;&#959;&#973;&#962;-&#945;&#961;&#953;&#952;&#956;&#959;&#973;&#962;">&#924;&#949;&#964;&#945;&#964;&#961;&#959;&#960;&#941;&#962; &#945;&#961;&#953;&#952;&#956;&#974;&#957; &#945;&#960;&#972; &#963;&#965;&#956;&#946;&#959;&#955;&#959;&#963;&#949;&#953;&#961;&#941;&#962; &#969;&#962; &#960;&#961;&#959;&#962; &#959;&#960;&#959;&#953;&#945;&#948;&#942;&#960;&#959;&#964;&#949; &#946;&#940;&#963;&#951; &#963;&#949; &#945;&#954;&#941;&#961;&#945;&#953;&#959;&#965;&#962; &#948;&#949;&#954;&#945;&#948;&#953;&#954;&#959;&#973;&#962; &#945;&#961;&#953;&#952;&#956;&#959;&#973;&#962;<a class="anchor-link" href="#&#924;&#949;&#964;&#945;&#964;&#961;&#959;&#960;&#941;&#962;-&#945;&#961;&#953;&#952;&#956;&#974;&#957;-&#945;&#960;&#972;-&#963;&#965;&#956;&#946;&#959;&#955;&#959;&#963;&#949;&#953;&#961;&#941;&#962;-&#969;&#962;-&#960;&#961;&#959;&#962;-&#959;&#960;&#959;&#953;&#945;&#948;&#942;&#960;&#959;&#964;&#949;-&#946;&#940;&#963;&#951;-&#963;&#949;-&#945;&#954;&#941;&#961;&#945;&#953;&#959;&#965;&#962;-&#948;&#949;&#954;&#945;&#948;&#953;&#954;&#959;&#973;&#962;-&#945;&#961;&#953;&#952;&#956;&#959;&#973;&#962;">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[113]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="n">a</span> <span class="o">=</span> <span class="s">&#39;010101&#39;</span>
+<span class="k">print</span> <span class="s">&quot;&#39;010101&#39; is of&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="k">print</span> <span class="s">&quot;int(&#39;010101&#39;) is of&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+<span class="n">a1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="k">print</span> <span class="s">&quot;&#39;010101&#39; is a number in base = 2 and int(&#39;010101&#39;) as a decimal number is&quot;</span><span class="p">,</span> <span class="n">a1</span>
+<span class="k">print</span> <span class="s">&quot;&#39;321&#39; is a number in base = 4 and int(&#39;321&#39;) as a decimal number is&quot;</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="s">&#39;321&#39;</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
+<span class="k">print</span> <span class="s">&quot;&#39;2ac&#39; is a number in base = 16 and int(&#39;2ac&#39;) as a decimal number is&quot;</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="s">&#39;2ac&#39;</span><span class="p">,</span><span class="mi">16</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&apos;010101&apos; is of &lt;type &apos;str&apos;&gt;
+int(&apos;010101&apos;) is of &lt;type &apos;int&apos;&gt;
+&apos;010101&apos; is a number in base = 2 and int(&apos;010101&apos;) as a decimal number is 21
+&apos;321&apos; is a number in base = 4 and int(&apos;321&apos;) as a decimal number is 57
+&apos;2ac&apos; is a number in base = 16 and int(&apos;2ac&apos;) as a decimal number is 684
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#928;&#943;&#957;&#945;&#954;&#945;&#962;-&#947;&#949;&#957;&#953;&#954;&#974;&#957;-&#956;&#949;&#964;&#945;&#964;&#961;&#959;&#960;&#974;&#957;-&#956;&#949;&#964;&#945;&#958;&#973;-&#948;&#953;&#940;&#966;&#959;&#961;&#969;&#957;-&#964;&#973;&#960;&#969;&#957;-&#948;&#949;&#948;&#959;&#956;&#941;&#957;&#969;&#957;">&#928;&#943;&#957;&#945;&#954;&#945;&#962; &#947;&#949;&#957;&#953;&#954;&#974;&#957; &#956;&#949;&#964;&#945;&#964;&#961;&#959;&#960;&#974;&#957; &#956;&#949;&#964;&#945;&#958;&#973; &#948;&#953;&#940;&#966;&#959;&#961;&#969;&#957; &#964;&#973;&#960;&#969;&#957; &#948;&#949;&#948;&#959;&#956;&#941;&#957;&#969;&#957;<a class="anchor-link" href="#&#928;&#943;&#957;&#945;&#954;&#945;&#962;-&#947;&#949;&#957;&#953;&#954;&#974;&#957;-&#956;&#949;&#964;&#945;&#964;&#961;&#959;&#960;&#974;&#957;-&#956;&#949;&#964;&#945;&#958;&#973;-&#948;&#953;&#940;&#966;&#959;&#961;&#969;&#957;-&#964;&#973;&#960;&#969;&#957;-&#948;&#949;&#948;&#959;&#956;&#941;&#957;&#969;&#957;">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -2865,159 +3058,7 @@ AAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Μετατροπές μεταξύ τύπων αριθμών:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[70]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">x</span> <span class="o">=</span> <span class="mf">16.7825</span>
-<span class="n">y</span> <span class="o">=</span> <span class="nb">long</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="n">z</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="k">print</span> <span class="s">&#39;16.7825 is of&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="k">print</span> <span class="s">&#39;long(16.7825) is of&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
-<span class="k">print</span> <span class="s">&#39;int(16.7825) is of&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
-<span class="k">print</span> <span class="s">&#39;long(16.7825) =&#39;</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s">&#39;and int(16.7825) =&#39;</span><span class="p">,</span> <span class="n">z</span>
-<span class="k">print</span> <span class="s">&#39;Note that long(16.7825) = int(16.7825) is&#39;</span><span class="p">,</span> <span class="n">y</span> <span class="o">==</span> <span class="n">z</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>16.7825 is of &lt;type &apos;float&apos;&gt;
-long(16.7825) is of &lt;type &apos;long&apos;&gt;
-int(16.7825) is of &lt;type &apos;int&apos;&gt;
-long(16.7825) = 16 and int(16.7825) = 16
-Note that long(16.7825) = int(16.7825) is True
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Πράξεις μεταξύ αριθμών διαφόρων τύπων απαγορεύονται και δίνουν λάθος:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">a</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="k">print</span> <span class="s">&#39;str(16.7825) =&#39;</span><span class="p">,</span> <span class="n">a</span>
-<span class="k">print</span> <span class="s">&#39;str(16.7825) is of&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-<span class="k">print</span> <span class="s">&#39;16.7825 + 10 =&#39;</span><span class="p">,</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">10</span>
-<span class="k">print</span> <span class="s">&#39;str(16.7825) + 10 =&#39;</span><span class="p">,</span> <span class="n">a</span> <span class="o">+</span> <span class="mi">10</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre> str(16.7825) = 16.7825
-str(16.7825) is of &lt;type &apos;str&apos;&gt;
-16.7825 + 10 = 26.7825
-str(16.7825) + 10 =</pre>
-</div>
-</div>
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansired">---------------------------------------------------------------------------</span>
-<span class="ansired">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansigreen">&lt;ipython-input-46-1c1e3e95e04d&gt;</span> in <span class="ansicyan">&lt;module&gt;</span><span class="ansiblue">()</span>
-<span class="ansigreen">      3</span> <span class="ansigreen">print</span> <span class="ansiblue">&apos;str(16.7825) is of&apos;</span><span class="ansiblue">,</span> type<span class="ansiblue">(</span>a<span class="ansiblue">)</span><span class="ansiblue"></span>
-<span class="ansigreen">      4</span> <span class="ansigreen">print</span> <span class="ansiblue">&apos;16.7825 + 10 =&apos;</span><span class="ansiblue">,</span> x <span class="ansiblue">+</span> <span class="ansicyan">10</span><span class="ansiblue"></span>
-<span class="ansigreen">----&gt; 5</span><span class="ansired"> </span><span class="ansigreen">print</span> <span class="ansiblue">&apos;str(16.7825) + 10 =&apos;</span><span class="ansiblue">,</span> a <span class="ansiblue">+</span> <span class="ansicyan">10</span><span class="ansiblue"></span>
-
-<span class="ansired">TypeError</span>: cannot concatenate &apos;str&apos; and &apos;int&apos; objects</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Παραδείγματα μετατροπής αριθμών από συμβολοσειρές ως προς οποιαδήποτε βάση σε ακέραιαους δεκαδικούς αριθμούς:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[69]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">a</span> <span class="o">=</span> <span class="s">&#39;010101&#39;</span>
-<span class="k">print</span> <span class="s">&quot;&#39;010101&#39; is of&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-<span class="k">print</span> <span class="s">&quot;int(&#39;010101&#39;) is of&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
-<span class="n">a1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
-<span class="k">print</span> <span class="s">&quot;&#39;010101&#39; is a number in base = 2 and int(&#39;010101&#39;) as a decimal number is&quot;</span><span class="p">,</span> <span class="n">a1</span>
-<span class="k">print</span> <span class="s">&quot;&#39;321&#39; is a number in base = 4 and int(&#39;321&#39;) as a decimal number is&quot;</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="s">&#39;321&#39;</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
-<span class="k">print</span> <span class="s">&quot;&#39;2ac&#39; is a number in base = 16 and int(&#39;2ac&#39;) as a decimal number is&quot;</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="s">&#39;2ac&#39;</span><span class="p">,</span><span class="mi">16</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>&apos;010101&apos; is of &lt;type &apos;str&apos;&gt;
-int(&apos;010101&apos;) is of &lt;type &apos;int&apos;&gt;
-&apos;010101&apos; is a number in base = 2 and int(&apos;010101&apos;) as a decimal number is 21
-&apos;321&apos; is a number in base = 4 and int(&apos;321&apos;) as a decimal number is 57
-&apos;2ac&apos; is a number in base = 16 and int(&apos;2ac&apos;) as a decimal number is 684
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#919;-&#963;&#967;&#941;&#963;&#951;-&#956;&#949;&#964;&#945;&#958;&#973;-repr(x)-&#954;&#945;&#953;-eval(str)">&#919; &#963;&#967;&#941;&#963;&#951; &#956;&#949;&#964;&#945;&#958;&#973; repr(x) &#954;&#945;&#953; eval(str)<a class="anchor-link" href="#&#919;-&#963;&#967;&#941;&#963;&#951;-&#956;&#949;&#964;&#945;&#958;&#973;-repr(x)-&#954;&#945;&#953;-eval(str)">&#182;</a></h3>
+<h4 id="&#919;-&#963;&#967;&#941;&#963;&#951;-&#956;&#949;&#964;&#945;&#958;&#973;-repr(x)-&#954;&#945;&#953;-eval(str)">&#919; &#963;&#967;&#941;&#963;&#951; &#956;&#949;&#964;&#945;&#958;&#973; repr(x) &#954;&#945;&#953; eval(str)<a class="anchor-link" href="#&#919;-&#963;&#967;&#941;&#963;&#951;-&#956;&#949;&#964;&#945;&#958;&#973;-repr(x)-&#954;&#945;&#953;-eval(str)">&#182;</a></h4>
 </div>
 </div>
 </div>
